@@ -1,7 +1,7 @@
 How to share data with a statistician
 ===========
 
-This guide was adapted from Jeff Leek’s guide on [How to share data with a statistician.] ( https://github.com/jtleek/datasharing) The target audiences are researchers who need to share data with a statistician, either for consulting or contract work. This guide are to provide some instruction on the best way to share data to avoid the most common pitfalls and sources of delay in the transition from data collection to data analysis. CSCU works with a large number of clients and the number one source of variation in the speed to results is the status of the data when they arrive.  Our staff statisticians will be able to handle the data in whatever state they arrive, however the analysis time can be greatly shortened if the researcher, who is more familiar with the data and the overall research project, takes some simple steps to convert raw data to analyzable data.  
+This guide was adapted from Jeff Leek’s guide on [How to share data with a statistician.] ( https://github.com/jtleek/datasharing) The target audiences are researchers who need to share data with a statistician, either for consulting or contract work. This guide are to provide some instruction on the best way to share data to avoid the most common pitfalls and sources of delay in the transition from data collection to data analysis. CSCU works with a large number of clients, and the number one source of variation in the speed to results is the status of the data when they arrive.  Our staff statisticians will be able to handle the data in whatever state they arrive, however the analysis time can be greatly shortened if the researcher, who is more familiar with the data and the overall research project, takes some simple steps to convert raw data to analyzable data.  
 
 
 What you should deliver to the statistician
@@ -66,7 +66,7 @@ information. It would have:
 is summarized at the level of the number of counts per exon. Suppose you have 100,000 exons, then you would have a
 table/spreadsheet 
 	* 100,001 columns (one column for patient ids and one column for each exon)
-	* 21 rows (a row for gene names, and one row for each patient)
+	* 21 rows (a row for exon names, and one row for each patient)
 
 If you are sharing your data with the collaborator in Excel, the tidy data should be in one Excel file per table. They
 should not have multiple worksheets, no macros should be applied to the data, and no columns/cells should be highlighted. 
@@ -119,7 +119,7 @@ In general, try to avoid coding categorical or ordinal variables as numbers. Whe
 data, it should be "male" or "female". The ordinal values in the data set should be "poor", "fair", and "good" not 1, 2 ,3.
 This will avoid potential mixups about which direction effects go and will help identify coding errors. 
 
-Always encode every piece of information about your observations using text. For example, if you are storing data in Excel and use a form of colored text or cell background formatting to indicate information about an observation ("red variable entries were observed in experiment 1.") then this information will not be exported (and will be lost!) when the data is exported as raw text.  Every piece of data should be encoded as actual text that can be exported.  
+Always encode every piece of information about your observations using text. For example, if you are storing data in Excel and use a form of colored text or cell background formatting to indicate information about an observation ("red variable entries were observed in experiment 1.") then this information will not be exported (and will be lost!) when the data is exported as raw text. Instead of color-coding, add another column that represents the concept "observed in experiment one" and let cell values be "yes" or "no."  Every piece of data should be encoded as actual text that can be exported.  
 
 ### The instruction list/script
 
