@@ -1,7 +1,7 @@
 How to share data with a statistician
 ===========
 
-This guide was adapted from Jeff Leek’s guide on [How to share data with a statistician.] ( https://github.com/jtleek/datasharing) The target audiences are researchers who need to share data with a statistician, either for consulting or contract work. The goals of this guide are to provide some instruction on the best way to share data to avoid the most common pitfalls and sources of delay in the transition from data collection to data analysis. CSCU works with a large number of clients and the number one source of variation in the speed to results is the status of the data when they arrive.  Our staff statisticians will be able to handle the data in whatever state they arrive, however the analysis time can be greatly shortened if the researcher, who is more familiar with the data and the overall research project, takes some simple steps to convert raw data to analyzable data.  
+This guide was adapted from Jeff Leek’s guide on [How to share data with a statistician.] ( https://github.com/jtleek/datasharing) The target audiences are researchers who need to share data with a statistician, either for consulting or contract work. This guide are to provide some instruction on the best way to share data to avoid the most common pitfalls and sources of delay in the transition from data collection to data analysis. CSCU works with a large number of clients and the number one source of variation in the speed to results is the status of the data when they arrive.  Our staff statisticians will be able to handle the data in whatever state they arrive, however the analysis time can be greatly shortened if the researcher, who is more familiar with the data and the overall research project, takes some simple steps to convert raw data to analyzable data.  
 
 
 What you should deliver to the statistician
@@ -57,12 +57,16 @@ of something like `ADx` or another abbreviation that may be hard for another per
 
 Here is an example of how this would work from genomics. Suppose that for 20 people you have collected gene expression measurements with 
 [RNA-sequencing](http://en.wikipedia.org/wiki/RNA-Seq). You have also collected demographic and clinical information
-about the patients including their age, treatment, and diagnosis. You would have one table/spreadsheet that contains the clinical/demographic
-information. It would have four columns (patient id, age, treatment, diagnosis) and 21 rows (a row with variable names, then one row
-for every patient). You would also have one spreadsheet for the summarized genomic data. Usually this type of data
+about the patients including their age, treatment, and diagnosis. 
+* You would have one table/spreadsheet that contains the clinical/demographic
+information. It would have:
+    * four columns (patient id, age, treatment, diagnosis) 
+	* 21 rows (a row with variable names, then one row for every patient). 
+* You would also have one spreadsheet for the summarized genomic data. Usually this type of data
 is summarized at the level of the number of counts per exon. Suppose you have 100,000 exons, then you would have a
-table/spreadsheet that had 21 rows (a row for gene names, and one row for each patient) and 100,001 columns (one row for patient
-ids and one row for each data type). 
+table/spreadsheet 
+	* 100,001 columns (one column for patient ids and one column for each exon)
+	* 21 rows (a row for gene names, and one row for each patient)
 
 If you are sharing your data with the collaborator in Excel, the tidy data should be in one Excel file per table. They
 should not have multiple worksheets, no macros should be applied to the data, and no columns/cells should be highlighted. 
