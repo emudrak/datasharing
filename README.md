@@ -1,7 +1,7 @@
 How to share data with a statistician
 ===========
 
-This guide was adapted from Jeff Leek’s guide on [How to share data with a statistician.] ( https://github.com/jtleek/datasharing) The target audiences are researchers who need to share data with a statistician, either for consulting or contract work. This guide are to provide some instruction on the best way to share data to avoid the most common pitfalls and sources of delay in the transition from data collection to data analysis. CSCU works with a large number of clients, and the number one source of variation in the speed to results is the status of the data when they arrive.  Our staff statisticians will be able to handle the data in whatever state they arrive, however the analysis time can be greatly shortened if the researcher, who is more familiar with the data and the overall research project, takes some simple steps to convert raw data to analyzable data.  
+This guide was adapted from Jeff Leek’s guide on [How to share data with a statistician.] ( https://github.com/jtleek/datasharing) The target audiences are researchers who need to share data with a statistician, either for consulting or contract work. This guide provides some instruction on the best way to share data to avoid the most common pitfalls and sources of delay in the transition from data collection to data analysis. CSCU works with a large number of clients, and the number one source of variation in the speed to results is the status of the data when they arrive.  Our staff statisticians will be able to handle the data in whatever state they arrive, however the analysis time can be greatly shortened if the researcher, who is more familiar with the data and the overall research project, takes some simple steps to convert raw data to analyzable data.  
 
 
 What you should deliver to the statistician
@@ -174,5 +174,6 @@ Contributors
 * [Jeff Leek](http://biostat.jhsph.edu/~jleek/) - Wrote the initial version.
 * [L. Collado-Torres](http://bit.ly/LColladoTorres) - Fixed typos, added links.
 * [Nick Reich](http://people.umass.edu/nick/) - Added tips on storing data as text.
+* [Erika Mudrak] (http://www.cscu.cornell.edu/) - Modified for CSCU clients
 
 
