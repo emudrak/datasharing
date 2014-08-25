@@ -40,9 +40,7 @@ forensic study of your data to figure out why the raw data looks weird.
 
 ### The tidy data set
 
-The general principles of tidy data are laid out by [Hadley Wickham](http://had.co.nz/) in [this paper](http://vita.had.co.nz/papers/tidy-data.pdf)
-and [this video](http://vimeo.com/33727555). The paper and the video are both focused on the [R](http://www.r-project.org/) package, which you
-may or may not know how to use. Regardless the four general principles you should pay attention to are:
+the four general principles you should pay attention to are:
 
 1. Each variable you measure should be in one column
 1. Each different observation of that variable should be in a different row
@@ -68,8 +66,9 @@ table/spreadsheet
 	* 100,001 columns (one column for patient ids and one column for each exon)
 	* 21 rows (a row for exon names, and one row for each patient)
 
-If you are sharing your data with the collaborator in Excel, the tidy data should be in one Excel file per table. They
-should not have multiple worksheets, no macros should be applied to the data, and no columns/cells should be highlighted. 
+There is more great information in [this paper](http://vita.had.co.nz/papers/tidy-data.pdf) by [Hadley Wickham](http://had.co.nz/) and [Borer et. al 2009. Some Simple Guidelines for Effective Data Management] (http://www.esajournals.org/doi/abs/10.1890/0012-9623-90.2.205). Regardless, 
+
+If you are sharing your data with the collaborator in Excel, the tidy data should be in one Excel sheet per table. No macros should be applied to the data, and no columns/cells should be highlighted (these features are not usually recognized my most statistics software). 
 Alternatively share the data in a [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) or [TAB-delimited](http://en.wikipedia.org/wiki/Tab-separated_values) text file.
 
 
@@ -106,8 +105,8 @@ When you put variables into a spreadsheet there are several main categories you 
 Continuous variables are anything measured on a quantitative scale that could be any fractional number. An example
 would be something like weight measured in kg. [Ordinal data](http://en.wikipedia.org/wiki/Ordinal_data) are data that have a fixed, small (< 100) number of levels but are ordered. 
 This could be for example survey responses where the choices are: poor, fair, good. [Categorical data](http://en.wikipedia.org/wiki/Categorical_variable) are data where there
-are multiple categories, but they aren't ordered. One example would be sex: male or female. [Missing data](http://en.wikipedia.org/wiki/Missing_data) are data
-that are missing and you don't know the mechanism. You should code missing values as `NA`. [Censored data](http://en.wikipedia.org/wiki/Censoring_(statistics\)) are data
+are multiple categories, but they aren't ordered. One example would be sex: male or female. The codebook should have a clear key to explain what each entry means. [Missing data](http://en.wikipedia.org/wiki/Missing_data) are data
+that are missing and you don't know the mechanism. You should code missing values as  with `NA`, a blank, or a period (this will vary by software used). [Censored data](http://en.wikipedia.org/wiki/Censoring_(statistics\)) are data
 where you know the missingness mechanism on some level. Common examples are a measurement being below a detection limit
 or a patient being lost to follow-up. They should also be coded as `NA` when you don't have the data. But you should
 also add a new column to your tidy data called, "VariableNameCensored" which should have values of `TRUE` if censored 
@@ -115,9 +114,6 @@ and `FALSE` if not. In the code book you should explain why those values are mis
 to the analyst if there is a reason you know about that some of the data are missing. You should also not [impute](http://en.wikipedia.org/wiki/Imputation_(statistics\))/make up/
 throw away missing observations.
 
-In general, try to avoid coding categorical or ordinal variables as numbers. When you enter the value for sex in the tidy
-data, it should be "male" or "female". The ordinal values in the data set should be "poor", "fair", and "good" not 1, 2 ,3.
-This will avoid potential mixups about which direction effects go and will help identify coding errors. 
 
 Always encode every piece of information about your observations using text. For example, if you are storing data in Excel and use a form of colored text or cell background formatting to indicate information about an observation ("red variable entries were observed in experiment 1.") then this information will not be exported (and will be lost!) when the data is exported as raw text. Instead of color-coding, add another column that represents the concept "observed in experiment one" and let cell values be "yes" or "no."  Every piece of data should be encoded as actual text that can be exported.  
 
