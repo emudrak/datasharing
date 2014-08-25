@@ -10,7 +10,7 @@ What you should deliver to the statistician
 For maximum speed in the analysis this is the information you should pass to a statistician:
 
 1. The raw data.
-2. A [tidy data set](http://vita.had.co.nz/papers/tidy-data.pdf) 
+2. A tidy/working data set 
 3. A code book describing each variable and its values in the tidy data set.  
 4. An explicit and exact recipe you used to go from 1 -> 2,3 
 
@@ -38,9 +38,9 @@ If you did any manipulation of the data at all it is not the raw form of the dat
 as raw data is a very common way to slow down the analysis process, since the analyst will often have to do a
 forensic study of your data to figure out why the raw data looks weird. 
 
-### The tidy data set
+### The tidy/working data set
 
-the four general principles you should pay attention to are:
+The four general principles you should pay attention to are:
 
 1. Each variable you measure should be in one column
 1. Each different observation of that variable should be in a different row
@@ -66,7 +66,7 @@ table/spreadsheet
 	* 100,001 columns (one column for patient ids and one column for each exon)
 	* 21 rows (a row for exon names, and one row for each patient)
 
-There is more great information in [this paper](http://vita.had.co.nz/papers/tidy-data.pdf) by [Hadley Wickham](http://had.co.nz/) and [Borer et. al 2009. Some Simple Guidelines for Effective Data Management] (http://www.esajournals.org/doi/abs/10.1890/0012-9623-90.2.205). Regardless, 
+There is more great information in [this paper](http://vita.had.co.nz/papers/tidy-data.pdf) by [Hadley Wickham](http://had.co.nz/) and [Borer et. al 2009. Some Simple Guidelines for Effective Data Management] (http://www.esajournals.org/doi/abs/10.1890/0012-9623-90.2.205). 
 
 If you are sharing your data with the collaborator in Excel, the tidy data should be in one Excel sheet per table. No macros should be applied to the data, and no columns/cells should be highlighted (these features are not usually recognized my most statistics software). 
 Alternatively share the data in a [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) or [TAB-delimited](http://en.wikipedia.org/wiki/Tab-separated_values) text file.
